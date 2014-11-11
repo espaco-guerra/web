@@ -1,0 +1,13 @@
+- content_for :head do
+  = stylesheet_link_tag 'game', media: 'screen', 'data-turbolinks-track' => true
+- content_for :javascript do
+  = javascript_include_tag 'game', 'data-turbolinks-track' => true
+
+#viewport.fullscreen
+
+:javascript
+  (function($) {
+    $(document).ready(function() {
+      $.EspacoGuerra.newGameOn($('#viewport'));
+    });
+  })(jQuery);

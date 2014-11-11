@@ -6,6 +6,7 @@ gem 'bundler'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
+gem 'haml'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
@@ -14,6 +15,7 @@ gem 'jbuilder'
 gem 'sdoc', group: :doc
 gem 'bcrypt'
 gem 'unicorn'
+gem 'bower-rails'
 
 group :development do
   gem 'capistrano-rails'
