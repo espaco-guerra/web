@@ -4,8 +4,12 @@ This is a rails application to host EspacoGuerra's web version. It'll provide mo
 
 ## Requirements:
 
-* Ruby 2.1.4
-* Bundler 1.7.5+
+* [Ruby](https://www.ruby-lang.org/en/) 2.1.4
+* [Rubygems](https://rubygems.org/) 2.3.4+
+* [Bundler](http://bundler.io/) 1.7.5+
+* [Node.js](https://nodejs.org/) 0.10.13+
+* [NPM](https://www.npmjs.org/) 1.3.2+
+* [Bower](https://github.com/bower/bower) 1.3.12+
 
 ## How to run the server:
 
