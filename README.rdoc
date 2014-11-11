@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a rails application to host EspacoGuerra's web version. It'll provide mostly APIs for mobile versions as well as the JS version based on [Three.js](http://threejs.org). The rest will be cosmetics to help users get excited with the game.
 
-Things you may want to cover:
+## Requirements:
 
-* Ruby version
+* Ruby 2.1.4
+* Bundler 1.7.5+
 
-* System dependencies
+## How to run the server:
 
-* Configuration
+Simply run `bundle install && bundle exec foreman start`.
+Then hit 'http://0.0.0.0:8080'.
 
-* Database creation
+## How to run the test suite
 
-* Database initialization
+Simply run `bundle install && bundle exec rake`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
