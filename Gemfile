@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.4'
 
-gem 'rails', '4.1.7'
+gem 'rails', '4.1.8'
 gem 'bundler'
 gem 'sqlite3'
 gem 'jquery-rails'
@@ -30,10 +30,14 @@ group :development, :test do
  gem 'rspec-collection_matchers'
  gem 'guard'
  gem 'guard-rspec'
- gem 'guard-jasmine'
+ gem 'konacha'
+ gem 'guard-konacha'
+ gem 'selenium-webdriver'
  gem 'foreman'
  gem 'byebug'
  gem 'pry'
  gem 'rb-fsevent' if `uname` =~ /Darwin/
+ gem 'terminal-notifier-guard' if `uname` =~ /Darwin/
+ gem 'libnotify' if `uname` =~ /Linux/
 end
 
