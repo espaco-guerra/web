@@ -32,6 +32,7 @@ group :development, :test do
  gem 'guard-rspec'
  gem 'konacha'
  gem 'guard-konacha'
+ gem 'headless'
  gem 'selenium-webdriver'
  gem 'foreman'
  gem 'byebug'
