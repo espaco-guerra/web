@@ -4,9 +4,15 @@
 describe("EspacoGuerra#newGameOn", function() {
   it("hooks inside an element", function() {
     var fakeElement = $('#konacha');
-    var renderer = $.EspacoGuerra.newGameOn(fakeElement);
+    var canvas = document.createElement('canvas');
+    var webGLUnavailable = canvas.getContext( 'webgl', {} ) === null
+    if (webGLUnavailable) {
+      assert.ok(canvas);
+    } else {
+      var renderer = $.EspacoGuerra.newGameOn(fakeElement);
 
-    assert.ok(renderer);
-    assert.ok($('#konacha').find('canvas').length);
+      assert.ok(renderer);
+      assert.ok($('#konacha').find('canvas').length);
+    }
   });
 });
