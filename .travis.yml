@@ -1,0 +1,9 @@
+language: ruby
+env:
+  global:
+    - DISPLAY=":99.0"
+before_script:
+  - "sh -e /etc/init.d/xvfb start"
+rvm:
+  - 2.1.4
+script: "bundle exec rake konacha:run"
