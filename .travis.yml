@@ -1,9 +1,13 @@
 language: ruby
+rvm:
+  - 2.1.4
 env:
   global:
     - DISPLAY=":99.0"
+before_install:
+  - gem source -u
 before_script:
-  - "sh -e /etc/init.d/xvfb start"
-rvm:
-  - 2.1.4
-script: "bundle exec rake konacha:run"
+  - sh -e /etc/init.d/xvfb start
+script:
+  - bundle exec rake
+bundler_args: --without development production assets
