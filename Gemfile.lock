@@ -57,6 +57,8 @@ GEM
       timers (~> 4.0.0)
     childprocess (0.5.5)
       ffi (~> 1.0, >= 1.0.11)
+    codeclimate-test-reporter (0.4.3)
+      simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -69,6 +71,7 @@ GEM
     columnize (0.8.9)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     dotenv (1.0.2)
     erubis (2.7.0)
     execjs (2.2.2)
@@ -192,6 +195,11 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
     slop (3.6.0)
     spring (1.2.0)
     spring-commands-rspec (1.0.2)
@@ -240,6 +248,7 @@ DEPENDENCIES
   bundler
   byebug
   capistrano-rails
+  codeclimate-test-reporter
   coffee-rails
   foreman
   guard
