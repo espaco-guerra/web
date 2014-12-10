@@ -8,6 +8,7 @@ before_install:
   - gem source -u
 before_script:
   - sh -e /etc/init.d/xvfb start
+  - bundle exec rake bower:install
 script:
   - bundle exec rake
 bundler_args: --without development production assets
