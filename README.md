@@ -15,9 +15,18 @@ This is a rails application to host EspacoGuerra's web version. It'll provide mo
 ## How to run the server:
 
 Simply run `bundle install && && bundle exec rake bower:install && bundle exec foreman start`.
-Then hit 'http://0.0.0.0:8080'.
+Then hit 'http://0.0.0.0:5000'.
+
+You can change the port in which this runs by creating a .env file at the root of the project with the content "PORT=<port_number>" like this:
+```
+PORT=3000
+```
 
 ## How to run the test suite
 
 Simply run `bundle install && bundle exec rake bower:install && bundle exec rake`
 
+## To develop:
+
+Run `dev.sh`.
+It will start your server as well as Guard to run your JS and RSpec on changes and finally a Konacha server for JS testing debug.
