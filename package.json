@@ -7,8 +7,5 @@
   "engine": {
     "node": "0.10.x",
     "npm": "1.3.x"
-  },
-  "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install -p --config .bowerrc"
   }
 }
