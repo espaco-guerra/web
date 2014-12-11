@@ -9,6 +9,6 @@
     "npm": "1.3.x"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install -p"
+    "postinstall": "./node_modules/bower/bin/bower install -p && ls -la vendor && ls -la vendor/assets/ && ls -la vendor/assets/bower_components && ls -la vendor/assets/bower_components/*"
   }
 }
