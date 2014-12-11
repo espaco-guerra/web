@@ -14,7 +14,7 @@ This is a rails application to host EspacoGuerra's web version. It'll provide mo
 
 ## How to run the server:
 
-Simply run `bundle install && bundle exec foreman start`.
+Simply run `bundle install && && bundle exec rake bower:install && bundle exec foreman start`.
 Then hit 'http://0.0.0.0:8080'.
 
 ## How to run the test suite
