@@ -2,6 +2,14 @@
 source 'https://rubygems.org'
 ruby '2.1.4'
 
+def linux_only(require_as)
+  RbConfig::CONFIG['host_os'] =~ /linux/ ? require_as : false
+end
+# Mac OS X
+def darwin_only(require_as)
+  RbConfig::CONFIG['host_os'] =~ /darwin/ ? require_as : false
+end
+
 gem 'rails', '4.1.8'
 gem 'bundler'
 gem 'sqlite3'
@@ -37,9 +45,9 @@ group :development, :test do
  gem 'foreman'
  gem 'byebug'
  gem 'pry'
- gem 'rb-fsevent' if `uname` =~ /Darwin/
- gem 'terminal-notifier-guard' if `uname` =~ /Darwin/
- gem 'libnotify' if `uname` =~ /Linux/
+ gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+ gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
+ gem 'libnotify', require: linux_only('rb-inotify')
 end
 
 group :test do

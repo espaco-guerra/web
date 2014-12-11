@@ -113,6 +113,8 @@ GEM
       colorize
       railties (>= 3.1, < 5)
       sprockets
+    libnotify (0.8.4)
+      ffi (>= 1.0.11)
     listen (2.8.3)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -260,6 +262,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   konacha
+  libnotify
   newrelic_rpm
   pry
   rails (= 4.1.8)
