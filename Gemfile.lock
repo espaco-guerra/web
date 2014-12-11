@@ -133,6 +133,7 @@ GEM
     newrelic_rpm (3.9.8.273)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    pg (0.17.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -264,6 +265,7 @@ DEPENDENCIES
   konacha
   libnotify
   newrelic_rpm
+  pg
   pry
   rails (= 4.1.8)
   rake

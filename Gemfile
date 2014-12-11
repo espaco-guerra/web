@@ -12,7 +12,6 @@ end
 
 gem 'rails', '4.1.8'
 gem 'bundler'
-gem 'sqlite3'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'haml'
@@ -26,12 +25,17 @@ gem 'bcrypt'
 gem 'unicorn'
 gem 'bower-rails'
 
+group :production do
+  gem 'pg'
+end
+
 group :development do
   gem 'capistrano-rails'
   gem 'spring'
 end
 
 group :development, :test do
+ gem 'sqlite3'
  gem 'rake'
  gem 'spring-commands-rspec'
  gem 'rspec'
@@ -51,5 +55,5 @@ group :development, :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
+ gem 'codeclimate-test-reporter', require: nil
 end
