@@ -52,7 +52,7 @@ group :development, :test do
  gem 'pry'
  gem 'rb-fsevent', require: darwin_only('rb-fsevent')
  gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
- gem 'libnotify', require: linux_only('rb-inotify')
+ gem 'rb-inotify', require: linux_only('rb-inotify')
 end
 
 group :test do
