@@ -1,6 +1,6 @@
 #encoding: UTF-8
 source 'https://rubygems.org'
-ruby '2.1.4'
+ruby '2.1.5'
 
 def linux_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /linux/ ? require_as : false
