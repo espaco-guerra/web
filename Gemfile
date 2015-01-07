@@ -45,7 +45,7 @@ group :development, :test do
  gem 'guard'
  gem 'guard-rspec'
  gem 'konacha'
- gem 'guard-konacha'
+ gem 'guard-konacha', git: 'https://github.com/lbeder/guard-konacha.git'
  gem 'selenium-webdriver'
  gem 'foreman'
  gem 'byebug'
