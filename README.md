@@ -14,7 +14,7 @@ This is a rails application to host EspacoGuerra's web version. It'll provide mo
 
 ## How to run the server:
 
-Simply run `bundle install && && bundle exec rake bower:install && bundle exec foreman start`.
+Simply run `bundle install && npm install && bundle exec foreman start`.
 Then hit 'http://0.0.0.0:5000'.
 
 You can change the port in which this runs by creating a .env file at the root of the project with the content "PORT=<port_number>" like this:
