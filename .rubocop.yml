@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*' # Pulled from Gemfile
+    - 'bin/*'
+    - 'db/schema.rb' # Auto-generated file
+  RunRailsCops: true
+
+Style/SymbolArray:
+  Enabled: true

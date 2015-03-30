@@ -1,4 +1,4 @@
-#encoding: UTF-8
+# encoding: UTF-8
 source 'https://rubygems.org'
 ruby '2.2.0'
 
@@ -36,25 +36,27 @@ group :development do
 end
 
 group :development, :test do
- gem 'sqlite3'
- gem 'rake'
- gem 'spring-commands-rspec'
- gem 'rspec'
- gem 'rspec-rails'
- gem 'rspec-collection_matchers'
- gem 'guard'
- gem 'guard-rspec'
- gem 'konacha'
- gem 'guard-konacha-rails'
- gem 'selenium-webdriver'
- gem 'foreman'
- gem 'byebug'
- gem 'pry'
- gem 'rb-fsevent', require: darwin_only('rb-fsevent')
- gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
- gem 'rb-inotify', require: linux_only('rb-inotify')
+  gem 'sqlite3'
+  gem 'rake'
+  gem 'spring-commands-rspec'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'rspec-collection_matchers'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'konacha'
+  gem 'guard-konacha-rails'
+  gem 'selenium-webdriver'
+  gem 'rubocop'
+  gem 'guard-rubocop'
+  gem 'foreman'
+  gem 'byebug'
+  gem 'pry'
+  gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+  gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
+  gem 'rb-inotify', require: linux_only('rb-inotify')
 end
 
 group :test do
- gem 'codeclimate-test-reporter', require: nil
+  gem 'codeclimate-test-reporter', require: nil
 end

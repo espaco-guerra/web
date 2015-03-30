@@ -1,10 +1,14 @@
-#encoding: UTF-8
+# encoding: UTF-8
 begin
-  desc "Task to run on CI: runs RSpec specs and Konacha specs"
-  task :ci => [:spec, :"konacha:run"]
+  desc 'Task to run on CI: runs Rubocop cops, RSpec specs and Konacha specs'
+  task ci: %i(rubocop spec konacha:run)
 
-  task :default => :ci
+  task default: :ci
+
+  task :rubocop do
+    sh 'bundle exec rubocop'
+  end
 rescue LoadError => e
-  puts "Error: #{e.message}"
-  puts e.backtrace
+  STDERR.puts "Error: #{e.message}"
+  STDERR.puts e.backtrace
 end

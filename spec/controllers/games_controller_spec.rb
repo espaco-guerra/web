@@ -1,7 +1,7 @@
-#encoding: UTF-8
+# encoding: UTF-8
 require_relative '../spec_helper.rb'
 
-describe GamesController, type: :controller do
+RSpec.describe GamesController, type: :controller do
   it 'should have #new' do
     get :new
 
