@@ -45,6 +45,7 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'konacha'
+  gem 'sprockets', '< 3.0' # Konacha 3.3.0 cannot handle sprockets 3 yet
   gem 'guard-konacha-rails'
   gem 'selenium-webdriver'
   gem 'rubocop'
