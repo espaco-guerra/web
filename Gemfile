@@ -44,8 +44,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'guard'
   gem 'guard-rspec'
-  gem 'konacha'
-  gem 'sprockets', '< 3.0' # Konacha 3.3.0 cannot handle sprockets 3 yet
+  gem 'konacha', '3.4.0' # For some reason rubygems doesn't pull 3.4.0 as latest
   gem 'guard-konacha-rails'
   gem 'selenium-webdriver'
   gem 'rubocop'
