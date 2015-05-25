@@ -44,7 +44,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'guard'
   gem 'guard-rspec'
-  gem 'konacha', '3.4.0' # For some reason rubygems doesn't pull 3.4.0 as latest
+  gem 'konacha'
   gem 'guard-konacha-rails'
   gem 'selenium-webdriver'
   gem 'rubocop'
