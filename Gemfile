@@ -32,6 +32,7 @@ end
 
 group :development do
   gem 'capistrano-rails'
+  gem 'net-ssh', '2.10.1.rc1' # 2.10 is yanked
   gem 'spring'
 end
 
