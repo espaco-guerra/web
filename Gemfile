@@ -10,7 +10,7 @@ def darwin_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /darwin/ ? require_as : false
 end
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 gem 'bundler'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
