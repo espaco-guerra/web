@@ -5,6 +5,7 @@ ruby '2.2.2'
 def linux_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /linux/ ? require_as : false
 end
+
 # Mac OS X
 def darwin_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /darwin/ ? require_as : false
@@ -32,7 +33,6 @@ end
 
 group :development do
   gem 'capistrano-rails'
-  gem 'net-ssh', '2.10.1.rc1' # 2.10 is yanked
   gem 'spring'
 end
 
