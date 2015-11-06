@@ -43,7 +43,7 @@ GEM
     bcrypt (3.1.10)
     bower-rails (0.10.0)
     builder (3.2.2)
-    byebug (6.0.2)
+    byebug (8.0.0)
     capistrano (3.4.0)
       i18n
       rake (>= 10.0.0)
@@ -124,7 +124,7 @@ GEM
       railties (>= 3.1, < 5)
       sprockets (>= 2, < 4)
       tilt
-    listen (3.0.3)
+    listen (3.0.4)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     loofah (2.0.3)
@@ -272,7 +272,7 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.9.0)
+    unicorn (5.0.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
