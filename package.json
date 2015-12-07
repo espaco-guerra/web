@@ -2,7 +2,7 @@
   "name": "espaco-guerra-web",
   "version": "0.0.1",
   "dependencies": {
-    "bower": "~1.6"
+    "bower": "~1.7"
   },
   "engine": {
     "node": "0.10.x",
