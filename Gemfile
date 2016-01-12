@@ -57,6 +57,7 @@ group :development, :test do
   gem 'rb-fsevent', require: darwin_only('rb-fsevent')
   gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
   gem 'rb-inotify', require: linux_only('rb-inotify')
+  gem 'brakeman', require: false
 end
 
 group :test do
