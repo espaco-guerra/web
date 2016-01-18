@@ -3,7 +3,9 @@ AllCops:
     - 'vendor/**/*' # Pulled from Gemfile
     - 'bin/*'
     - 'db/schema.rb' # Auto-generated file
-  RunRailsCops: true
+
+Rails:
+  Enabled: true
 
 Style/SymbolArray:
   Enabled: true
