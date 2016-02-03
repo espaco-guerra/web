@@ -45,8 +45,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'guard'
   gem 'guard-rspec'
-  gem 'konacha'
-  gem 'sprockets-rails', '< 3.0.0' # Problems with Konacha 3.7.0 for 3+
+  gem 'konacha', git: 'https://github.com/alexkravets/konacha.git'
   gem 'guard-konacha-rails'
   gem 'selenium-webdriver'
   gem 'rubocop'
