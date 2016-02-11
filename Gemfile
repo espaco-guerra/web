@@ -45,7 +45,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'guard'
   gem 'guard-rspec'
-  gem 'konacha', git: 'https://github.com/alexkravets/konacha.git'
+  gem 'konacha'
   gem 'guard-konacha-rails'
   gem 'selenium-webdriver'
   gem 'rubocop'
