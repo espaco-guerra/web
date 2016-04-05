@@ -109,7 +109,7 @@ GEM
       guard-compat
       konacha (>= 3.0)
       rails (>= 4.0)
-    guard-rspec (4.6.4)
+    guard-rspec (4.6.5)
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
@@ -299,9 +299,8 @@ GEM
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.0.3)
-    unicorn (5.0.1)
+    unicorn (5.1.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
     websocket (1.2.2)
     xpath (2.0.0)
