@@ -16,7 +16,7 @@ env:
   global:
     - DISPLAY=":99.0"
     - CHROME_BIN="/usr/bin/google-chrome"
-    - PATH=$PATH:./bin/
+    - PATH=$PATH:./bin/Linux/:./bin/
 before_install:
   - gem source -u
   - npm install bower -g
