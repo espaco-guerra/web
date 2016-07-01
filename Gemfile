@@ -11,7 +11,7 @@ def darwin_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /darwin/ ? require_as : false
 end
 
-gem 'rails', '~> 5.0' # TODO: 5.0 needs konacha > 4.0
+gem 'rails', '~> 4.2' # TODO: 5.0 needs konacha > 4.0
 gem 'bundler'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
