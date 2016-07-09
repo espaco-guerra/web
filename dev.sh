@@ -27,5 +27,5 @@ if [[ -z `which bundle` ]]; then
 fi
 bundle
 
-export PATH=${MY_DIR}/bin:${MY_DIR}/bin/`uname`:${PATH}
+export PATH=${PATH}:${MY_DIR}/bin:${MY_DIR}/bin/`uname`
 bundle exec foreman start -f Procfile.dev
