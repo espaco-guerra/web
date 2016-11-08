@@ -1,7 +1,7 @@
 # encoding: UTF-8
 begin
   desc 'Task to run on CI: runs Rubocop cops, RSpec specs and Konacha specs'
-  task ci: %i(rubocop spec brakeman konacha)
+  task ci: %i(rubocop spec codeclimate-test-reporter brakeman konacha)
 
   task default: :ci
 
@@ -11,6 +11,12 @@ begin
 
   task :brakeman do
     sh 'bundle exec brakeman -z'
+  end
+
+  task :'codeclimate-test-reporter' do
+    sh 'if [[ -n ${CODECLIMATE_REPO_TOKEN} ]];\
+      then bundle exec codeclimate-test-reporter;\
+      fi'
   end
 
   task :konacha do
