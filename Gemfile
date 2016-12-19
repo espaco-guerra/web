@@ -11,20 +11,20 @@ def darwin_only(require_as)
   RbConfig::CONFIG['host_os'] =~ /darwin/ ? require_as : false
 end
 
-gem 'rails', '~> 4.2' # TODO: 5.0 needs konacha > 4.0
+gem 'bcrypt'
+gem 'bower-rails'
 gem 'bundler'
+gem 'coffee-rails'
+gem 'haml'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
-gem 'haml'
+gem 'rails', '~> 4.2' # TODO: 5.0 needs konacha > 4.0
 gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-gem 'turbolinks'
-gem 'jbuilder'
 gem 'sdoc', group: :doc
-gem 'bcrypt'
+gem 'turbolinks'
+gem 'uglifier'
 gem 'unicorn'
-gem 'bower-rails'
 
 group :production do
   gem 'pg'
@@ -37,29 +37,29 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
-  gem 'rake'
-  gem 'spring-commands-rspec'
-  gem 'rspec'
-  gem 'rspec-rails'
-  gem 'rspec-collection_matchers'
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'konacha' # TODO: Upgrade to unblock rails 5
-  gem 'guard-konacha-rails'
-  gem 'selenium-webdriver'
-  gem 'rubocop'
-  gem 'guard-rubocop'
-  gem 'foreman'
-  gem 'byebug'
-  gem 'pry'
-  gem 'rb-fsevent', require: darwin_only('rb-fsevent')
-  gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
-  gem 'rb-inotify', require: linux_only('rb-inotify')
   gem 'brakeman', require: false
+  gem 'byebug'
+  gem 'foreman'
+  gem 'guard'
+  gem 'guard-konacha-rails'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
+  gem 'konacha' # TODO: Upgrade to unblock rails 5
+  gem 'pry'
+  gem 'rake'
+  gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+  gem 'rb-inotify', require: linux_only('rb-inotify')
+  gem 'rspec'
+  gem 'rspec-collection_matchers'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'selenium-webdriver'
+  gem 'spring-commands-rspec'
+  gem 'sqlite3'
+  gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
 end
 
 group :test do
-  gem 'simplecov'
   gem 'codeclimate-test-reporter', '~> 1.0.0'
+  gem 'simplecov'
 end
