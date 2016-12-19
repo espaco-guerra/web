@@ -19,7 +19,7 @@ gem 'haml'
 gem 'jbuilder'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 4.2' # TODO: 5.0 needs konacha > 4.0
 gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
@@ -44,7 +44,7 @@ group :development, :test do
   gem 'guard-konacha-rails'
   gem 'guard-rspec'
   gem 'guard-rubocop'
-  gem 'konacha'
+  gem 'konacha' # TODO: Upgrade to unblock rails 5
   gem 'pry'
   gem 'rake'
   gem 'rb-fsevent', require: darwin_only('rb-fsevent')
