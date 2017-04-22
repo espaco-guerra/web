@@ -2,7 +2,7 @@
 
 begin
   desc 'Task to run on CI: runs Rubocop cops, RSpec specs and brakeman'
-  task ci: %i(rubocop spec codeclimate-test-reporter brakeman)
+  task ci: %i[rubocop spec codeclimate-test-reporter brakeman]
 
   task default: :ci
 
