@@ -44,20 +44,8 @@ guard :rspec, cmd: 'bundle exec spring rspec' do
   end
 end
 
-### Guard::Konacha
-#  available options:
-#  - :run_all_on_start, defaults to true
-#  - :notification, defaults to true
-#  - :rails_environment_file, location of rails environment file,
-#    should be able to find it automatically
-guard :'konacha-rails' do
-  watch(%r{^app/assets/javascripts/(.*)\.js(\.coffee)?$}) do |m|
-    "#{m[1]}_spec.js"
-  end
-  watch(%r{^spec/javascripts/.+_spec(\.js|\.js\.coffee)$})
-end
-
 guard :rubocop do
   watch(%r{.+\.rb$})
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
+# rubocop:enable Style/RegexpLiteral
