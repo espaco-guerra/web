@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Basic controller.
 # Nothing fancy.
 class ApplicationController < ActionController::Base

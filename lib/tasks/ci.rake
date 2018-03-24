@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   desc 'Task to run on CI: runs Rubocop cops, RSpec specs and brakeman'
   task ci: %i[rubocop spec codeclimate-test-reporter brakeman]
