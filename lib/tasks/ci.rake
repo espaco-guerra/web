@@ -20,6 +20,6 @@ begin
       fi'
   end
 rescue LoadError => e
-  STDERR.puts "Error: #{e.message}"
-  STDERR.puts e.backtrace
+  warn "Error: #{e.message}"
+  warn e.backtrace
 end
