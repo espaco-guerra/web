@@ -52,7 +52,7 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 3.11.0'
   gem 'spring-commands-rspec'
   gem 'sqlite3'
   gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
