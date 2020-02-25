@@ -20,7 +20,7 @@ gem 'haml'
 gem 'jbuilder'
 gem 'jquery-rails', '>= 4.3.5'
 gem 'newrelic_rpm'
-gem 'rails', '~> 5.2', '>= 5.2.3'
+gem 'rails', '~> 5.2', '>= 5.2.4.1'
 gem 'sass-rails', '>= 6.0.0'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
