@@ -5,11 +5,7 @@ addons:
   # From some tests it seems you can only have one firefox addon.
   # Adding two results in the last one defined being the one installed.
   firefox: latest
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+  chrome: stable
 rvm:
   - 2.6.3
 env:
