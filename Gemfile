@@ -17,10 +17,10 @@ gem 'bower-rails'
 gem 'bundler'
 gem 'coffee-rails', '>= 5.0.0'
 gem 'haml'
-gem 'jbuilder'
+gem 'jbuilder', '>= 2.7.0'
 gem 'jquery-rails', '>= 4.3.5'
 gem 'newrelic_rpm'
-gem 'rails', '~> 5.2', '>= 5.2.4.2'
+gem 'rails', '~> 5.2', '>= 5.2.4.3'
 gem 'sass-rails', '>= 6.0.0'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
@@ -34,7 +34,7 @@ end
 
 group :development do
   gem 'capistrano-rails'
-  gem 'spring'
+  gem 'spring', '>= 2.0.2'
 end
 
 group :development, :test do
@@ -53,7 +53,7 @@ group :development, :test do
   gem 'rspec-rails', '>= 3.7.2'
   gem 'rubocop'
   gem 'selenium-webdriver', '>= 3.11.0'
-  gem 'spring-commands-rspec'
+  gem 'spring-commands-rspec', '>= 1.0.4'
   gem 'sqlite3'
   gem 'terminal-notifier-guard', require: darwin_only('terminal-notifier-guard')
 end
