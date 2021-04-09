@@ -43,7 +43,7 @@ group :development, :test do
   gem 'foreman'
   gem 'guard'
   gem 'guard-rspec'
-  gem 'guard-rubocop'
+  gem 'guard-rubocop', '>= 1.3.0'
   gem 'pry'
   gem 'rake'
   gem 'rb-fsevent', require: darwin_only('rb-fsevent')
@@ -51,7 +51,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-collection_matchers'
   gem 'rspec-rails', '>= 4.0.1'
-  gem 'rubocop'
+  gem 'rubocop', '>= 0.85.0'
   gem 'selenium-webdriver', '>= 3.11.0'
   gem 'spring-commands-rspec', '>= 1.0.4'
   gem 'sqlite3'
