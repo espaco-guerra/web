@@ -22,7 +22,7 @@ gem 'jquery-rails', '>= 4.4.0'
 gem 'newrelic_rpm'
 gem 'rails', '~> 5.2', '>= 5.2.4.3'
 gem 'sass-rails', '>= 6.0.0'
-gem 'sdoc', group: :doc
+gem 'sdoc', '>= 1.1.0', group: :doc
 gem 'turbolinks'
 gem 'uglifier'
 gem 'unicorn'
