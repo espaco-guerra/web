@@ -50,7 +50,7 @@ group :development, :test do
   gem 'rb-inotify', require: linux_only('rb-inotify')
   gem 'rspec'
   gem 'rspec-collection_matchers'
-  gem 'rspec-rails', '>= 4.0.1'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rubocop'
   gem 'selenium-webdriver', '>= 3.11.0'
   gem 'spring-commands-rspec', '>= 1.0.4'
